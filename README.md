@@ -6,7 +6,7 @@ A simple CLI to test a version string whether it satisfies the condition or not.
 ## Usage
 
 ```bash
-semver "1.0.1" "<2.0.0 || >3.0.0"
+semver "1.0.1" "<2.0.0,>1.0.0"
 status=$?
 [ $status -eq 0 ] && echo "valid version" || echo "invalid version"
 
